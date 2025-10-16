@@ -8,11 +8,11 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getBuildTimeServerManifestAsync = getBuildTimeServerManifestAsync;
 exports.getManifest = getManifest;
-const _ctx_1 = require("../../_ctx");
-const getReactNavigationConfig_1 = require("../getReactNavigationConfig");
-const getRoutes_1 = require("../getRoutes");
-const getServerManifest_1 = require("../getServerManifest");
-const loadStaticParamsAsync_1 = require("../loadStaticParamsAsync");
+const _ctx_1 = require("expo-router/_ctx");
+const getReactNavigationConfig_1 = require("expo-router/build/getReactNavigationConfig");
+const getRoutes_1 = require("expo-router/build/getRoutes");
+const getServerManifest_1 = require("expo-router/build/getServerManifest");
+const loadStaticParamsAsync_1 = require("expo-router/build/loadStaticParamsAsync");
 /**
  * Get the server manifest with all dynamic routes loaded with `generateStaticParams`.
  * Unlike the `expo-router/src/routes-manifest.ts` method, this requires loading the entire app in-memory, which

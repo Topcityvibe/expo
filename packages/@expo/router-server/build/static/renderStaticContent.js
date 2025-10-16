@@ -52,11 +52,11 @@ const server_node_1 = __importDefault(require("react-dom/server.node"));
 // @ts-expect-error: TODO(@kitten): Define this type (seems to differ from react-native)
 const react_native_web_1 = require("react-native-web");
 const getRootComponent_1 = require("./getRootComponent");
-const _ctx_1 = require("../../_ctx");
-const ExpoRoot_1 = require("../ExpoRoot");
-const head_1 = require("../head");
+const _ctx_1 = require("expo-router/_ctx");
+const ExpoRoot_1 = require("expo-router/build/ExpoRoot");
+const head_1 = require("expo-router/build/head");
 const html_1 = require("./html");
-const ServerDataLoaderContext_1 = require("../loaders/ServerDataLoaderContext");
+const ServerDataLoaderContext_1 = require("expo-router/build/loaders/ServerDataLoaderContext");
 const debug = require('debug')('expo:router:renderStaticContent');
 react_native_web_1.AppRegistry.registerComponent('App', () => ExpoRoot_1.ExpoRoot);
 function resetReactNavigationContexts() {
@@ -65,7 +65,7 @@ function resetReactNavigationContexts() {
     // React Navigation is storing providers in a global, this is fine for the first static render
     // but subsequent static renders of Stack or Tabs will cause React to throw a warning. To prevent this warning, we'll reset the globals before rendering.
     const contexts = '__react_navigation__elements_contexts';
-    global[contexts] = new Map();
+    globalThis[contexts] = new Map();
 }
 async function getStaticContent(location, options) {
     const headContext = {};
