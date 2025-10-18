@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getServerManifest = getServerManifest;
 exports.parseParameter = parseParameter;
-const matchers_1 = require("./matchers");
-const sortRoutes_1 = require("./sortRoutes");
-const url_1 = require("./utils/url");
+const matchers_1 = require("expo-router/build/matchers");
+const sortRoutes_1 = require("expo-router/build/sortRoutes");
+const url_1 = require("expo-router/build/utils/url");
 function isNotFoundRoute(route) {
     return route.dynamic && route.dynamic[route.dynamic.length - 1].notFound;
 }
