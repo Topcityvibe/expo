@@ -21,7 +21,7 @@ export function evaluateJsFromCdpAsync(
       reject(new Error('Request timeout'));
       settled = true;
       ws.close();
-    }, timeoutMs);
+    }, timeoutMs) as unknown as NodeJS.Timeout;
 
     ws.on('open', () => {
       ws.send(
