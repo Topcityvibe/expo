@@ -5,23 +5,9 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Vertex Assessment Center Limited | PTE Registration & Preparation',
   description: 'Professional PTE Academic & PTE Core registration, expert preparation classes, and realistic mock tests in Lagos, Nigeria.',
-  generator: 'v0.app',
   keywords: 'PTE, PTE Academic, PTE Core, English test, exam preparation, Lagos Nigeria',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
+    icon: '/favicon.png',
     apple: '/apple-icon.png',
   },
 }
