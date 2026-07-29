@@ -56,7 +56,7 @@ export function Footer() {
               <li className="flex gap-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-muted-foreground">
-                  24 Da-Silva Street, Lekki Phase 1, Lagos State
+                  Vertex Building, Liberty Estate Laderin, Abeokuta, Ogun State
                 </span>
               </li>
               <li className="flex gap-3">
