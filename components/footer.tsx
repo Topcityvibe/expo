@@ -18,7 +18,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm text-muted-foreground">
-              Precision • Integrity • Excellence
+              Your Gateway to Global Success
             </p>
             <div className="flex gap-3">
               <SocialLink href="#" icon={Globe} />

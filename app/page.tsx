@@ -55,7 +55,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center space-y-4">
                     <Trophy className="w-24 h-24 text-white/80 mx-auto" />
-                    <p className="text-white text-lg font-semibold">Precision • Integrity • Excellence</p>
+                    <p className="text-white text-lg font-semibold">Your Gateway to Global Success</p>
                   </div>
                 </div>
               </div>
