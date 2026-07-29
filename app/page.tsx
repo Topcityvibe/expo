@@ -22,7 +22,7 @@ export default function HomePage() {
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 text-white text-sm font-medium">
                   <Sparkles className="w-4 h-4" />
-                  Premium PTE Services in Lagos
+                  Premium PTE Services in Abeokuta Ogun State
                 </div>
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
                   Master the PTE with Confidence
