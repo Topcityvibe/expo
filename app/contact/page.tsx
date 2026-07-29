@@ -39,8 +39,8 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-1">Visit Our Centre</h3>
                   <p className="text-muted-foreground">
-                    24 Da-Silva Street<br />
-                    Lekki Phase 1, Lagos State<br />
+                    Vertex Building, Liberty Estate Laderin<br />
+                    Abeokuta, Ogun State<br />
                     Nigeria
                   </p>
                 </div>
@@ -118,7 +118,7 @@ export default function ContactPage() {
             <div className="text-center">
               <MapPin className="w-16 h-16 text-primary/30 mx-auto mb-4" />
               <p className="text-muted-foreground">
-                24 Da-Silva Street, Lekki Phase 1, Lagos State
+                Vertex Building, Liberty Estate Laderin, Abeokuta, Ogun State
               </p>
             </div>
           </div>
