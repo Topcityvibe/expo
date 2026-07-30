@@ -27,6 +27,7 @@ export function Header() {
           <nav className="hidden md:flex items-center gap-8">
             <NavLink href="/">Home</NavLink>
             <NavLink href="/about">About</NavLink>
+            <NavLink href="/testing-environment">Facilities</NavLink>
             <NavLink href="/pte-academic">PTE Academic</NavLink>
             <NavLink href="/pte-core">PTE Core</NavLink>
             <NavLink href="/preparation">Preparation</NavLink>
@@ -66,6 +67,7 @@ export function Header() {
           <nav className="md:hidden pb-4 border-t border-border">
             <MobileNavLink href="/">Home</MobileNavLink>
             <MobileNavLink href="/about">About</MobileNavLink>
+            <MobileNavLink href="/testing-environment">Facilities</MobileNavLink>
             <MobileNavLink href="/pte-academic">PTE Academic</MobileNavLink>
             <MobileNavLink href="/pte-core">PTE Core</MobileNavLink>
             <MobileNavLink href="/preparation">Preparation</MobileNavLink>
