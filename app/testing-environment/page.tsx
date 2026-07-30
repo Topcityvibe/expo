@@ -150,18 +150,21 @@ export default function TestingEnvironmentPage() {
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative order-2 lg:order-1 h-96 md:h-auto bg-secondary rounded-2xl flex items-center justify-center">
-              {!imageErrors['logoenv'] ? (
+              {!imageErrors['lounge_image'] ? (
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%205.52.10%20AM-JY3qI9clFVEd0zqvb4dd6DXTMaqrmD.jpeg"
-                  alt="Vertex Testing Services Logo and professional environment"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%206.27.56%20AM-HbdcgB9nc71F2Cu7aIW6IDtOMrFDi8.jpeg"
+                  alt="Candidate Waiting Lounge at Vertex Testing Services"
                   width={600}
                   height={400}
                   className="rounded-2xl shadow-2xl w-full h-full object-cover"
                   unoptimized
-                  onError={() => handleImageError('logoenv')}
+                  onError={() => handleImageError('lounge_image')}
                 />
               ) : (
-                <p className="text-muted-foreground">Vertex Environment</p>
+                <div className="text-center">
+                  <p className="text-xl font-semibold text-foreground">Vertex</p>
+                  <p className="text-sm text-muted-foreground">Assessment Center</p>
+                </div>
               )}
             </div>
 

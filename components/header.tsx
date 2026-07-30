@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { ThemeToggle } from './theme-toggle'
+import Image from 'next/image'
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -13,12 +14,19 @@ export function Header() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-              <span className="text-white font-bold">VA</span>
+          <Link href="/" className="flex items-center gap-2 group">
+            <div className="w-12 h-12 relative group-hover:scale-105 transition-transform">
+              <Image
+                src="/logo.svg"
+                alt="Vertex Testing Services Logo"
+                width={48}
+                height={48}
+                className="w-full h-full object-contain"
+                priority
+              />
             </div>
             <div className="hidden sm:block">
-              <div className="text-base font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Vertex</div>
+              <div className="text-sm font-semibold text-foreground">Vertex</div>
               <div className="text-xs text-muted-foreground leading-none">Assessment Center</div>
             </div>
           </Link>
