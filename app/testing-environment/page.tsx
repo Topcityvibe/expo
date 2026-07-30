@@ -75,11 +75,14 @@ export default function TestingEnvironmentPage() {
               </div>
             </div>
 
-            <div className="relative">
-              <img
+            <div className="relative h-96 md:h-auto">
+              <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%206.02.56%20AM-Ntzhza5t3GsZNO1MtyLFsq8mQJgKK5.jpeg"
                 alt="Executive Testing Suites with modern workstations"
-                className="rounded-2xl shadow-2xl w-full h-auto object-cover"
+                width={600}
+                height={400}
+                className="rounded-2xl shadow-2xl w-full h-full object-cover"
+                unoptimized
               />
             </div>
           </div>
@@ -94,18 +97,24 @@ export default function TestingEnvironmentPage() {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img
+            <div className="rounded-2xl overflow-hidden shadow-lg h-96 relative">
+              <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%206.18.42%20AM-R1tb3RoXwafwAnpbc4XkNfKt5Ovpnj.jpeg"
                 alt="Modern testing workstations with ergonomic furniture"
-                className="w-full h-96 object-cover"
+                width={600}
+                height={400}
+                className="w-full h-full object-cover"
+                unoptimized
               />
             </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img
+            <div className="rounded-2xl overflow-hidden shadow-lg h-96 relative">
+              <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%206.27.56%20AM-3lNiRRaStek0ESnnQ0ZVOTSPuSMKUm.jpeg"
                 alt="Premium candidate waiting lounge with comfortable seating"
-                className="w-full h-96 object-cover"
+                width={600}
+                height={400}
+                className="w-full h-full object-cover"
+                unoptimized
               />
             </div>
           </div>
@@ -116,11 +125,14 @@ export default function TestingEnvironmentPage() {
       <section className="py-24">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative order-2 lg:order-1">
-              <img
+            <div className="relative order-2 lg:order-1 h-96 md:h-auto">
+              <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%205.52.10%20AM-JY3qI9clFVEd0zqvb4dd6DXTMaqrmD.jpeg"
                 alt="Vertex Testing Services Logo and professional environment"
-                className="rounded-2xl shadow-2xl w-full h-auto object-cover"
+                width={600}
+                height={400}
+                className="rounded-2xl shadow-2xl w-full h-full object-cover"
+                unoptimized
               />
             </div>
 
@@ -211,11 +223,14 @@ export default function TestingEnvironmentPage() {
               </div>
             </div>
 
-            <div className="relative">
-              <img
+            <div className="relative h-96 md:h-auto">
+              <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%206.39.57%20AM-IQT6Ll96COVZin4jx8x3BuKCuEbqTJ.jpeg"
                 alt="Professional Vertex Testing Services team"
-                className="rounded-2xl shadow-2xl w-full h-auto object-cover"
+                width={600}
+                height={400}
+                className="rounded-2xl shadow-2xl w-full h-full object-cover"
+                unoptimized
               />
             </div>
           </div>
