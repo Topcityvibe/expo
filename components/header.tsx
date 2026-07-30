@@ -35,7 +35,7 @@ export function Header() {
             </div>
             <div className="hidden sm:block">
               <div className="text-sm font-semibold text-foreground">Vertex</div>
-              <div className="text-xs text-muted-foreground leading-none">Assessment Center</div>
+              <div className="text-xs text-muted-foreground leading-none"></div>
             </div>
           </Link>
 
