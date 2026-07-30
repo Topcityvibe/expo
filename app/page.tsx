@@ -244,8 +244,8 @@ export default function HomePage() {
             />
             <TestimonialCard
               quote="The computer-based mock tests helped me understand the exam format perfectly. The detailed feedback allowed me to improve significantly."
-              author="Priya Singh"
-              status="PTE Academic - 91 Points"
+              author="Adeola Malik"
+              status="PTE Academic - 90 Points"
               stars={5}
             />
           </div>

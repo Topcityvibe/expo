@@ -71,10 +71,10 @@ export function Footer() {
               <li className="flex gap-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                 <a
-                  href="mailto:info@vertexassessment.com"
+                  href="mailto:info@vertextestingservices.com"
                   className="text-sm text-muted-foreground hover:text-primary transition"
                 >
-                  info@vertexassessment.com
+                  info@vertextestingservices.com
                 </a>
               </li>
             </ul>
