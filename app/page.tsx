@@ -2,11 +2,23 @@
 
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
-import { ArrowRight, CheckCircle2, Users, Zap, Trophy, BookOpen, Sparkles, Target, Award } from 'lucide-react'
+import { ArrowRight, CheckCircle2, Users, Zap, Trophy, BookOpen, Sparkles, Target, Award, Shield } from 'lucide-react'
 import Link from 'next/link'
 import { Star } from 'lucide-react'
+import Image from 'next/image'
+import { useState } from 'react'
 
 export default function HomePage() {
+  const [imageErrors, setImageErrors] = useState<{[key: string]: boolean}>({})
+  
+  const handleImageError = (imageName: string) => {
+    try {
+      setImageErrors(prev => ({...prev, [imageName]: true}))
+    } catch (e) {
+      console.log('[v0] Image error:', imageName)
+    }
+  }
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
@@ -248,6 +260,83 @@ export default function HomePage() {
               status="PTE Academic - 90 Points"
               stars={5}
             />
+          </div>
+        </div>
+      </section>
+
+      {/* World-Class Facilities Section */}
+      <section className="py-24 bg-secondary/20">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+              World-Class Testing Facilities
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Experience our premium testing environment designed for comfort, concentration, and success
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="rounded-2xl overflow-hidden shadow-lg h-96 relative bg-secondary flex items-center justify-center">
+              {!imageErrors['workstations_home'] ? (
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%206.18.42%20AM-R1tb3RoXwafwAnpbc4XkNfKt5Ovpnj.jpeg"
+                  alt="Modern testing workstations with ergonomic furniture"
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover"
+                  unoptimized
+                  onError={() => handleImageError('workstations_home')}
+                />
+              ) : (
+                <div className="text-center">
+                  <p className="text-lg font-semibold text-foreground">Premium Workstations</p>
+                  <p className="text-sm text-muted-foreground">High-performance computers & ergonomic seating</p>
+                </div>
+              )}
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-lg h-96 relative bg-secondary flex items-center justify-center">
+              {!imageErrors['lounge_home'] ? (
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%206.27.56%20AM-HbdcgB9nc71F2Cu7aIW6IDtOMrFDi8.jpeg"
+                  alt="Premium candidate waiting lounge with comfortable seating"
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover"
+                  unoptimized
+                  onError={() => handleImageError('lounge_home')}
+                />
+              ) : (
+                <div className="text-center">
+                  <p className="text-lg font-semibold text-foreground">Waiting Lounge</p>
+                  <p className="text-sm text-muted-foreground">Comfortable space to relax before your test</p>
+                </div>
+              )}
+            </div>
+          </div>
+
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-2">Secure Environment</h3>
+              <p className="text-muted-foreground">Enterprise-grade security with 24/7 CCTV monitoring</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <Zap className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-2">Advanced Technology</h3>
+              <p className="text-muted-foreground">Cutting-edge testing technology & stable internet</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <Users className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-2">Professional Support</h3>
+              <p className="text-muted-foreground">Dedicated staff to assist you throughout your test</p>
+            </div>
           </div>
         </div>
       </section>

@@ -10,7 +10,11 @@ export default function TestingEnvironmentPage() {
   const [imageErrors, setImageErrors] = useState<{[key: string]: boolean}>({})
   
   const handleImageError = (imageName: string) => {
-    setImageErrors(prev => ({...prev, [imageName]: true}))
+    try {
+      setImageErrors(prev => ({...prev, [imageName]: true}))
+    } catch (e) {
+      console.log('[v0] Image error handling for:', imageName)
+    }
   }
 
   return (

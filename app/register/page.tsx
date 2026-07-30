@@ -1,14 +1,85 @@
+'use client'
+
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { CheckCircle2, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
-
-export const metadata = {
-  title: 'Register for PTE | Vertex Assessment Center Limited',
-  description: 'Begin your PTE journey with confidence. Professional registration for PTE Academic and PTE Core examinations.',
-}
+import { useState } from 'react'
 
 export default function RegisterPage() {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    testType: '',
+    preferredDate: '',
+    message: ''
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target
+    setFormData(prev => ({...prev, [name]: value}))
+  }
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone || !formData.testType || !formData.preferredDate) {
+      alert('Please fill in all required fields')
+      return
+    }
+
+    setIsSubmitting(true)
+
+    try {
+      const message = `
+*New Registration Request from Vertex Assessment Center*
+
+📋 *Candidate Information:*
+• Name: ${formData.firstName} ${formData.lastName}
+• Email: ${formData.email}
+• Phone: ${formData.phone}
+
+📝 *Test Details:*
+• Test Type: ${formData.testType === 'pte-academic' ? 'PTE Academic' : 'PTE Core'}
+• Preferred Date: ${formData.preferredDate}
+
+💬 *Additional Info:*
+${formData.message || 'None'}
+
+---
+This registration was submitted through our website form.
+`
+
+      const encodedMessage = encodeURIComponent(message)
+      const whatsappNumber = '+2348147138191'
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`
+      
+      // Open WhatsApp in new tab
+      window.open(whatsappURL, '_blank')
+      
+      // Reset form
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        testType: '',
+        preferredDate: '',
+        message: ''
+      })
+      
+      alert('Please confirm your details in WhatsApp. Our team will respond shortly!')
+    } catch (error) {
+      console.error('[v0] Error sending to WhatsApp:', error)
+      alert('Error sending registration. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
@@ -65,7 +136,7 @@ export default function RegisterPage() {
             {/* Registration Form */}
             <div className="p-8 rounded-lg bg-card border border-border">
               <h2 className="text-3xl font-bold text-foreground mb-6">Registration Form</h2>
-              <form className="space-y-5">
+              <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-foreground mb-2">
@@ -75,6 +146,8 @@ export default function RegisterPage() {
                       type="text"
                       id="firstName"
                       name="firstName"
+                      value={formData.firstName}
+                      onChange={handleInputChange}
                       required
                       className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:border-primary transition"
                       placeholder="First name"
@@ -88,6 +161,8 @@ export default function RegisterPage() {
                       type="text"
                       id="lastName"
                       name="lastName"
+                      value={formData.lastName}
+                      onChange={handleInputChange}
                       required
                       className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:border-primary transition"
                       placeholder="Last name"
@@ -103,6 +178,8 @@ export default function RegisterPage() {
                     type="email"
                     id="email"
                     name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
                     required
                     className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:border-primary transition"
                     placeholder="your@email.com"
@@ -117,6 +194,8 @@ export default function RegisterPage() {
                     type="tel"
                     id="phone"
                     name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
                     required
                     className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:border-primary transition"
                     placeholder="+234 123 456 7890"
@@ -130,6 +209,8 @@ export default function RegisterPage() {
                   <select
                     id="testType"
                     name="testType"
+                    value={formData.testType}
+                    onChange={handleInputChange}
                     required
                     className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:border-primary transition"
                   >
@@ -147,6 +228,8 @@ export default function RegisterPage() {
                     type="date"
                     id="preferredDate"
                     name="preferredDate"
+                    value={formData.preferredDate}
+                    onChange={handleInputChange}
                     required
                     className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:border-primary transition"
                   />
@@ -159,6 +242,8 @@ export default function RegisterPage() {
                   <textarea
                     id="message"
                     name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
                     rows={3}
                     className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:border-primary transition resize-none"
                     placeholder="Any questions or additional information..."
@@ -167,15 +252,16 @@ export default function RegisterPage() {
 
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition inline-flex items-center justify-center gap-2"
+                  disabled={isSubmitting}
+                  className="w-full px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition inline-flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Complete Registration
+                  {isSubmitting ? 'Sending...' : 'Complete Registration'}
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </form>
 
               <p className="text-xs text-muted-foreground mt-4">
-                Our team will contact you within 24 hours to confirm your registration and provide next steps.
+                Your registration details will be sent directly to our WhatsApp. Our team will respond within 24 hours.
               </p>
             </div>
           </div>
