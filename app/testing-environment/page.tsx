@@ -4,8 +4,15 @@ import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { CheckCircle2, Users, Shield, Headphones, Zap, Lock } from 'lucide-react'
 import Image from 'next/image'
+import { useState } from 'react'
 
 export default function TestingEnvironmentPage() {
+  const [imageErrors, setImageErrors] = useState<{[key: string]: boolean}>({})
+  
+  const handleImageError = (imageName: string) => {
+    setImageErrors(prev => ({...prev, [imageName]: true}))
+  }
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
@@ -75,15 +82,22 @@ export default function TestingEnvironmentPage() {
               </div>
             </div>
 
-            <div className="relative h-96 md:h-auto">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%206.02.56%20AM-Ntzhza5t3GsZNO1MtyLFsq8mQJgKK5.jpeg"
-                alt="Executive Testing Suites with modern workstations"
-                width={600}
-                height={400}
-                className="rounded-2xl shadow-2xl w-full h-full object-cover"
-                unoptimized
-              />
+            <div className="relative h-96 md:h-auto bg-secondary rounded-2xl flex items-center justify-center">
+              {!imageErrors['suites'] ? (
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%206.02.56%20AM-Ntzhza5t3GsZNO1MtyLFsq8mQJgKK5.jpeg"
+                  alt="Executive Testing Suites with modern workstations"
+                  width={600}
+                  height={400}
+                  className="rounded-2xl shadow-2xl w-full h-full object-cover"
+                  unoptimized
+                  onError={() => handleImageError('suites')}
+                />
+              ) : (
+                <div className="text-center text-muted-foreground">
+                  <p>Testing Suites Image</p>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -97,25 +111,35 @@ export default function TestingEnvironmentPage() {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="rounded-2xl overflow-hidden shadow-lg h-96 relative">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%206.18.42%20AM-R1tb3RoXwafwAnpbc4XkNfKt5Ovpnj.jpeg"
-                alt="Modern testing workstations with ergonomic furniture"
-                width={600}
-                height={400}
-                className="w-full h-full object-cover"
-                unoptimized
-              />
+            <div className="rounded-2xl overflow-hidden shadow-lg h-96 relative bg-secondary flex items-center justify-center">
+              {!imageErrors['workstations'] ? (
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%206.18.42%20AM-R1tb3RoXwafwAnpbc4XkNfKt5Ovpnj.jpeg"
+                  alt="Modern testing workstations with ergonomic furniture"
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover"
+                  unoptimized
+                  onError={() => handleImageError('workstations')}
+                />
+              ) : (
+                <p className="text-muted-foreground">Testing Workstations</p>
+              )}
             </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg h-96 relative">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%206.27.56%20AM-3lNiRRaStek0ESnnQ0ZVOTSPuSMKUm.jpeg"
-                alt="Premium candidate waiting lounge with comfortable seating"
-                width={600}
-                height={400}
-                className="w-full h-full object-cover"
-                unoptimized
-              />
+            <div className="rounded-2xl overflow-hidden shadow-lg h-96 relative bg-secondary flex items-center justify-center">
+              {!imageErrors['lounge'] ? (
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%206.27.56%20AM-3lNiRRaStek0ESnnQ0ZVOTSPuSMKUm.jpeg"
+                  alt="Premium candidate waiting lounge with comfortable seating"
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover"
+                  unoptimized
+                  onError={() => handleImageError('lounge')}
+                />
+              ) : (
+                <p className="text-muted-foreground">Waiting Lounge</p>
+              )}
             </div>
           </div>
         </div>
@@ -125,15 +149,20 @@ export default function TestingEnvironmentPage() {
       <section className="py-24">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative order-2 lg:order-1 h-96 md:h-auto">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%205.52.10%20AM-JY3qI9clFVEd0zqvb4dd6DXTMaqrmD.jpeg"
-                alt="Vertex Testing Services Logo and professional environment"
-                width={600}
-                height={400}
-                className="rounded-2xl shadow-2xl w-full h-full object-cover"
-                unoptimized
-              />
+            <div className="relative order-2 lg:order-1 h-96 md:h-auto bg-secondary rounded-2xl flex items-center justify-center">
+              {!imageErrors['logoenv'] ? (
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%205.52.10%20AM-JY3qI9clFVEd0zqvb4dd6DXTMaqrmD.jpeg"
+                  alt="Vertex Testing Services Logo and professional environment"
+                  width={600}
+                  height={400}
+                  className="rounded-2xl shadow-2xl w-full h-full object-cover"
+                  unoptimized
+                  onError={() => handleImageError('logoenv')}
+                />
+              ) : (
+                <p className="text-muted-foreground">Vertex Environment</p>
+              )}
             </div>
 
             <div className="order-1 lg:order-2">
@@ -223,15 +252,20 @@ export default function TestingEnvironmentPage() {
               </div>
             </div>
 
-            <div className="relative h-96 md:h-auto">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%206.39.57%20AM-IQT6Ll96COVZin4jx8x3BuKCuEbqTJ.jpeg"
-                alt="Professional Vertex Testing Services team"
-                width={600}
-                height={400}
-                className="rounded-2xl shadow-2xl w-full h-full object-cover"
-                unoptimized
-              />
+            <div className="relative h-96 md:h-auto bg-secondary rounded-2xl flex items-center justify-center">
+              {!imageErrors['team'] ? (
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%206.39.57%20AM-IQT6Ll96COVZin4jx8x3BuKCuEbqTJ.jpeg"
+                  alt="Professional Vertex Testing Services team"
+                  width={600}
+                  height={400}
+                  className="rounded-2xl shadow-2xl w-full h-full object-cover"
+                  unoptimized
+                  onError={() => handleImageError('team')}
+                />
+              ) : (
+                <p className="text-muted-foreground">Professional Team</p>
+              )}
             </div>
           </div>
         </div>
