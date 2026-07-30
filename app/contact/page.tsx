@@ -68,10 +68,10 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-1">Email</h3>
                   <a
-                    href="mailto:info@vertexassessment.com"
+                    href="mailto:info@vertextestingservices.com"
                     className="text-muted-foreground hover:text-primary transition"
                   >
-                    info@vertexassessment.com
+                    info@vertextestingservices.com
                   </a>
                 </div>
               </div>
