@@ -8,6 +8,7 @@ import Image from 'next/image'
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [logoError, setLogoError] = useState(false)
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/98 backdrop-blur supports-[backdrop-filter]:bg-background/95 shadow-sm">
@@ -15,15 +16,22 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-12 h-12 relative group-hover:scale-105 transition-transform">
-              <Image
-                src="/logo.svg"
-                alt="Vertex Testing Services Logo"
-                width={48}
-                height={48}
-                className="w-full h-full object-contain"
-                priority
-              />
+            <div className="w-12 h-12 relative group-hover:scale-105 transition-transform flex items-center justify-center">
+              {!logoError ? (
+                <Image
+                  src="/logo.svg"
+                  alt="Vertex Testing Services Logo"
+                  width={48}
+                  height={48}
+                  className="w-full h-full object-contain"
+                  priority
+                  onError={() => setLogoError(true)}
+                />
+              ) : (
+                <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">V</span>
+                </div>
+              )}
             </div>
             <div className="hidden sm:block">
               <div className="text-sm font-semibold text-foreground">Vertex</div>
