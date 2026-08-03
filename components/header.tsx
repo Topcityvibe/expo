@@ -15,27 +15,24 @@ export function Header() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-12 h-12 relative group-hover:scale-105 transition-transform flex items-center justify-center">
+          <Link href="/" className="flex items-center group">
+            <div className="h-16 relative group-hover:scale-105 transition-transform flex items-center justify-center">
               {!logoError ? (
                 <Image
-                  src="/logo.svg"
-                  alt="Vertex Testing Services Logo"
-                  width={48}
-                  height={48}
-                  className="w-full h-full object-contain"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-30%20at%205.52.10%20AM-g8zeUQf5z6cZbh1pb7TW3mimaHkdls.jpeg"
+                  alt="Vertex Testing Services Limited Logo"
+                  width={120}
+                  height={64}
+                  className="h-full w-auto object-contain"
                   priority
+                  unoptimized
                   onError={() => setLogoError(true)}
                 />
               ) : (
-                <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center flex-shrink-0">
                   <span className="text-white font-bold text-sm">V</span>
                 </div>
               )}
-            </div>
-            <div className="hidden sm:block">
-              <div className="text-sm font-semibold text-foreground">Vertex</div>
-              <div className="text-xs text-muted-foreground leading-none"></div>
             </div>
           </Link>
 
