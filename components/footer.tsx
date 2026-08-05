@@ -56,7 +56,7 @@ export function Footer() {
               <li className="flex gap-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-muted-foreground">
-                  Vertex Building, Liberty Estate Laderin, Abeokuta, Ogun State
+                  Vertex Testing Services Limited, Vertex House, Abiola Way, near Oke Lantoro, Abeokuta 111101, Ogun State
                 </span>
               </li>
               <li className="flex gap-3">
