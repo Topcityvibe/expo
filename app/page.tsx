@@ -34,13 +34,13 @@ export default function HomePage() {
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 text-white text-sm font-medium">
                   <Sparkles className="w-4 h-4" />
-                  Premium PTE Services in Abeokuta Ogun State
+                  Premium Global Exam Services in Abeokuta, Ogun State
                 </div>
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-                  Master the PTE with Confidence
+                  Prepare for Global Exams with Confidence
                 </h1>
                 <p className="text-xl text-white/90 leading-relaxed">
-                  Your Trusted Partner for PTE Success. Professional registration, expert preparation, and realistic mock tests.
+                  Your Trusted Partner for International Exam Success. Professional registration support, expert preparation, realistic mock tests, and personalized guidance for PTE, IELTS, CELPIP, TOEFL and GRE.
                 </p>
               </div>
 
@@ -168,43 +168,43 @@ export default function HomePage() {
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Why Candidates Choose Vertex
+              WHY CANDIDATES CHOOSE VERTEX
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Excellence in every interaction, professionalism in every service
+              Your Trusted Partner for Global Examination Success
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <WhyChooseCard
               icon={CheckCircle2}
-              title="Professional Support"
-              description="Our team guides you through every stage with accuracy and expertise."
+              title="PROFESSIONAL EXAM REGISTRATION"
+              description="Reliable registration assistance for PTE, IELTS, CELPIP, TOEFL, GRE, SAT and other international examinations."
             />
             <WhyChooseCard
               icon={Award}
-              title="Modern Learning Environment"
-              description="Comfortable facilities designed with quality and professionalism."
+              title="MODERN LEARNING ENVIRONMENT"
+              description="A comfortable, professional and technology-driven environment designed to support effective learning and preparation."
             />
             <WhyChooseCard
               icon={Target}
-              title="Expert Preparation"
-              description="Comprehensive training programs to maximize your performance."
+              title="EXPERT EXAM PREPARATION"
+              description="Structured preparation programmes, practical strategies and professional guidance designed to help candidates perform at their best."
             />
             <WhyChooseCard
               icon={BookOpen}
-              title="Realistic Mock Tests"
-              description="Practice in exam-like environment reflecting the actual PTE."
+              title="REALISTIC MOCK TESTING"
+              description="Practice under realistic examination conditions, build confidence, identify areas for improvement and prepare effectively for test day."
             />
             <WhyChooseCard
               icon={Users}
-              title="Experienced Team"
-              description="Dedicated instructors committed to your success."
+              title="EXPERIENCED & DEDICATED TEAM"
+              description="A knowledgeable and committed team providing professional guidance throughout your registration and preparation journey."
             />
             <WhyChooseCard
               icon={Sparkles}
-              title="Exceptional Support"
-              description="Available to answer questions and provide guidance."
+              title="EXCEPTIONAL CANDIDATE SUPPORT"
+              description="From registration and preparation to mock testing and general enquiries, our team is available to provide reliable and responsive support."
             />
           </div>
         </div>
@@ -220,7 +220,7 @@ export default function HomePage() {
                   Excellence Begins Here
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Vertex Testing Services Limited is committed to helping individuals achieve their international education, career, and immigration goals through high-quality PTE registration and preparation services.
+                  Vertex Testing Services Limited is committed to empowering individuals to achieve their international education, career and immigration goals through professional examination registration, comprehensive preparation programmes, realistic mock testing and exceptional candidate support for PTE, IELTS, CELPIP, TOEFL, GRE, SAT and other international examinations.
                 </p>
               </div>
 
@@ -276,30 +276,30 @@ export default function HomePage() {
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Success Stories
+              SUCCESS STORIES
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Hear from our successful candidates about their experience with us
+              Real experiences from candidates who trusted Vertex for their examination registration, preparation and support.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <TestimonialCard
-              quote="The preparation classes were well organized, and the instructors explained every section of the exam clearly. The mock tests gave me the confidence I needed."
+              quote="The entire process was professional and well organised. From my IELTS registration to preparation, the Vertex team guided me clearly and made everything easy for me."
               author="Sarah Johnson"
-              status="PTE Academic - 89 Points"
+              status="IELTS Candidate"
               stars={5}
             />
             <TestimonialCard
-              quote="I was impressed by the professionalism of the staff. From registration to preparation, everything was smooth and stress-free. Highly recommended!"
+              quote="Vertex made my PTE journey straightforward and stress-free. The preparation sessions and mock tests helped me understand the examination format and approach my test with confidence."
               author="Ahmed Hassan"
-              status="PTE Core - 82 Points"
+              status="PTE Candidate"
               stars={5}
             />
             <TestimonialCard
-              quote="The computer-based mock tests helped me understand the exam format perfectly. The detailed feedback allowed me to improve significantly."
+              quote="I received excellent support throughout my GRE registration and preparation. The team was responsive, knowledgeable and genuinely committed to helping me prepare effectively."
               author="Adeola Malik"
-              status="PTE Academic - 90 Points"
+              status="GRE Candidate"
               stars={5}
             />
           </div>
@@ -389,10 +389,10 @@ export default function HomePage() {
         <div className="absolute top-0 right-0 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to Begin Your PTE Journey?
+            READY TO BEGIN YOUR GLOBAL EXAM JOURNEY?
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto mb-10">
-            Take the next step toward achieving your study, work, or immigration goals. Our experienced team is here to guide you every step of the way.
+            Take the next step toward achieving your study, career and immigration goals. Whether you are preparing for PTE, IELTS, CELPIP, TOEFL, GRE, SAT or another international examination, Vertex is here to support you from registration to preparation and beyond.
           </p>
           <Link
             href="/register"

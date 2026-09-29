@@ -43,6 +43,7 @@ export function Header() {
             <NavLink href="/testing-environment">Facilities</NavLink>
             <NavLink href="/pte-academic">PTE Academic</NavLink>
             <NavLink href="/pte-core">PTE Core</NavLink>
+            <NavLink href="/ielts">IELTS</NavLink>
             <NavLink href="/preparation">Preparation</NavLink>
             <NavLink href="/mock-tests">Mock Tests</NavLink>
             <NavLink href="/contact">Contact</NavLink>
@@ -83,6 +84,7 @@ export function Header() {
             <MobileNavLink href="/testing-environment">Facilities</MobileNavLink>
             <MobileNavLink href="/pte-academic">PTE Academic</MobileNavLink>
             <MobileNavLink href="/pte-core">PTE Core</MobileNavLink>
+            <MobileNavLink href="/ielts">IELTS</MobileNavLink>
             <MobileNavLink href="/preparation">Preparation</MobileNavLink>
             <MobileNavLink href="/mock-tests">Mock Tests</MobileNavLink>
             <MobileNavLink href="/contact">Contact</MobileNavLink>
