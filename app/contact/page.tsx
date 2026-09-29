@@ -17,7 +17,7 @@ export default function ContactPage() {
               HERE TO SUPPORT YOUR JOURNEY
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Have questions about international examination registration or need assistance choosing the right examination? Our dedicated team is here to provide clear guidance, reliable registration support, and professional assistance from start to finish.
+              Have questions about international examination registration or need assistance choosing the right examination? Our dedicated team is here to provide clear guidance, reliable registration support.
               <br />
               IELTS • PTE • TOEFL • GRE • GMAT • CELPIP &amp; MORE
               <br />
@@ -104,10 +104,10 @@ export default function ContactPage() {
             <h2 className="text-3xl font-bold text-foreground mb-8">We Can Assist With</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <ServiceItem text="PTE Academic & PTE Core Registration" />
-              <ServiceItem text="IELTS Registration & Support" />
-              <ServiceItem text="CELPIP Registration & Support" />
-              <ServiceItem text="TOEFL Registration & Support" />
-              <ServiceItem text="GRE Registration & Support" />
+              <ServiceItem text="IELTS Registration" />
+              <ServiceItem text="CELPIP Registration" />
+              <ServiceItem text="TOEFL Registration" />
+              <ServiceItem text="GRE Registration" />
               <ServiceItem text="Exam Preparation & Mock Tests" />
             </div>
           </div>
