@@ -84,7 +84,7 @@ export default function HomePage() {
               What We Offer
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Comprehensive PTE registration and preparation services designed for your success
+              Professional registration, preparation, and support for leading international examinations, including PTE, IELTS, CELPIP, GRE, TOEFL, and SAT.
             </p>
           </div>
 
