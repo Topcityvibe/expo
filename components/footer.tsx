@@ -33,8 +33,12 @@ export function Footer() {
             <ul className="space-y-2">
               <FooterLink href="/pte-academic">PTE Academic Registration</FooterLink>
               <FooterLink href="/pte-core">PTE Core Registration</FooterLink>
-              <FooterLink href="/preparation">PTE Preparation</FooterLink>
-              <FooterLink href="/mock-tests">PTE Mock Tests</FooterLink>
+              <FooterLink href="/register">IELTS Registration</FooterLink>
+              <FooterLink href="/register">CELPIP Registration</FooterLink>
+              <FooterLink href="/register">TOEFL Registration</FooterLink>
+              <FooterLink href="/register">GRE Registration</FooterLink>
+              <FooterLink href="/preparation">Exam Preparation</FooterLink>
+              <FooterLink href="/mock-tests">Mock Tests</FooterLink>
             </ul>
           </div>
 

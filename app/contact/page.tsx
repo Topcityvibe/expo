@@ -103,12 +103,12 @@ export default function ContactPage() {
           <div className="bg-card border border-border rounded-lg p-8 md:p-12">
             <h2 className="text-3xl font-bold text-foreground mb-8">We Can Assist With</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <ServiceItem text="PTE Academic Registration" />
-              <ServiceItem text="PTE Core Registration" />
-              <ServiceItem text="Preparation Class Enquiries" />
-              <ServiceItem text="Mock Test Bookings" />
-              <ServiceItem text="General Information" />
-              <ServiceItem text="Corporate Partnerships" />
+              <ServiceItem text="PTE Academic & PTE Core Registration" />
+              <ServiceItem text="IELTS Registration & Support" />
+              <ServiceItem text="CELPIP Registration & Support" />
+              <ServiceItem text="TOEFL Registration & Support" />
+              <ServiceItem text="GRE Registration & Support" />
+              <ServiceItem text="Exam Preparation & Mock Tests" />
             </div>
           </div>
         </div>
