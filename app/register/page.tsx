@@ -109,27 +109,27 @@ This registration was submitted through our website form.
 
               <RegisterCard
                 title="PTE Academic"
-                description="For university admission, study abroad, and international opportunities"
+                description="For university admission, study abroad, professional opportunities, and other academic purposes."
                 href="/pte-academic"
                 color="primary"
               />
 
               <RegisterCard
                 title="PTE Core"
-                description="For Canadian immigration and immigration pathway programs"
+                description="For Canadian immigration and other approved Canadian economic migration pathways."
                 href="/pte-core"
                 color="accent"
               />
 
               <RegisterCard
-                title="Preparation Classes"
-                description="Comprehensive training programs to prepare for your PTE examination"
+                title="PREPARATION PROGRAMMES"
+                description="Structured preparation support for a range of international examinations."
                 href="/preparation"
                 color="primary"
               />
 
               <RegisterCard
-                title="Mock Tests"
+                title="MOCK TESTS"
                 description="Realistic practice examinations designed to assess readiness, build confidence, and improve test-day preparation."
                 href="/mock-tests"
                 color="accent"
@@ -138,21 +138,21 @@ This registration was submitted through our website form.
               <RegisterCard
                 title="IELTS"
                 description="For study, migration, professional registration, employment, and international opportunities."
-                href="/register"
+                href="/ielts"
                 color="primary"
               />
 
               <RegisterCard
                 title="TOEFL"
-                description="For university admission, international education, and opportunities requiring English proficiency."
-                href="/register"
+                description="For university admission, international education, and other opportunities requiring proof of English proficiency."
+                href="/toefl"
                 color="accent"
               />
 
               <RegisterCard
                 title="GRE"
                 description="For Master&apos;s, PhD, MBA, and other graduate or professional programme applications."
-                href="/register"
+                href="/gre"
                 color="primary"
               />
 
@@ -165,15 +165,15 @@ This registration was submitted through our website form.
 
               <RegisterCard
                 title="SAT"
-                description="For undergraduate university admission, scholarships, and academic opportunities."
-                href="/register"
+                description="For undergraduate university admission, scholarships, and other academic opportunities."
+                href="/sat"
                 color="primary"
               />
 
               <RegisterCard
                 title="CELPIP"
-                description="For Canadian immigration, citizenship, and approved pathways where CELPIP is accepted."
-                href="/register"
+                description="For Canadian immigration, citizenship, and other purposes where CELPIP results are accepted."
+                href="/celpip"
                 color="accent"
               />
             </div>

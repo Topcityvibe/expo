@@ -121,21 +121,21 @@ export default function HomePage() {
               icon={BookOpen}
               title="IELTS"
               description="Professional registration support for study, migration, and international opportunities."
-              href="/register"
+              href="/ielts"
               color="from-violet-500 to-purple-500"
             />
             <ServiceCard
               icon={Zap}
               title="TOEFL"
               description="Registration support for university admission and international education."
-              href="/register"
+              href="/toefl"
               color="from-purple-500 to-fuchsia-500"
             />
             <ServiceCard
               icon={Award}
               title="GRE"
               description="Registration guidance for Master's, PhD, MBA, and graduate programmes."
-              href="/register"
+              href="/gre"
               color="from-fuchsia-500 to-pink-500"
             />
             <ServiceCard
@@ -149,14 +149,14 @@ export default function HomePage() {
               icon={Users}
               title="SAT"
               description="Registration support for undergraduate admission and scholarships."
-              href="/register"
+              href="/sat"
               color="from-orange-500 to-amber-500"
             />
             <ServiceCard
               icon={Shield}
               title="CELPIP"
               description="Canadian immigration, citizenship, and approved pathway registration support."
-              href="/register"
+              href="/celpip"
               color="from-amber-500 to-yellow-500"
             />
           </div>
