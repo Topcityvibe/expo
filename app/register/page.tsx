@@ -88,10 +88,13 @@ This registration was submitted through our website form.
       <section className="py-16 md:py-24 bg-card border-b border-border">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Begin Your PTE Journey with Confidence
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Professional registration assistance for PTE Academic and PTE Core examinations
+              BEGIN YOUR GLOBAL EXAMINATION JOURNEY WITH CONFIDENCE
+            </h1>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Professional registration support for leading international examinations.<br />
+              IELTS • PTE • TOEFL • GRE • GMAT • SAT • CELPIP &amp; MORE<br />
+              From registration to test-day readiness, Vertex Testing Services Limited is committed to providing accurate, reliable, and professional support throughout your examination journey.<br />
+              YOUR GATEWAY TO GLOBAL SUCCESS
           </p>
         </div>
       </section>
@@ -102,7 +105,7 @@ This registration was submitted through our website form.
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
             {/* Registration Services */}
             <div className="space-y-8">
-              <h2 className="text-3xl font-bold text-foreground">Register For</h2>
+              <h2 className="text-3xl font-bold text-foreground">REGISTER FOR YOUR EXAMINATION</h2>
 
               <RegisterCard
                 title="PTE Academic"
@@ -127,8 +130,50 @@ This registration was submitted through our website form.
 
               <RegisterCard
                 title="Mock Tests"
-                description="Realistic practice examinations with detailed performance feedback"
+                description="Realistic practice examinations designed to assess readiness, build confidence, and improve test-day preparation."
                 href="/mock-tests"
+                color="accent"
+              />
+
+              <RegisterCard
+                title="IELTS"
+                description="For study, migration, professional registration, employment, and international opportunities."
+                href="/register"
+                color="primary"
+              />
+
+              <RegisterCard
+                title="TOEFL"
+                description="For university admission, international education, and opportunities requiring English proficiency."
+                href="/register"
+                color="accent"
+              />
+
+              <RegisterCard
+                title="GRE"
+                description="For Master&apos;s, PhD, MBA, and other graduate or professional programme applications."
+                href="/register"
+                color="primary"
+              />
+
+              <RegisterCard
+                title="GMAT"
+                description="For MBA, business Master&apos;s, and graduate management programme applications."
+                href="/register"
+                color="accent"
+              />
+
+              <RegisterCard
+                title="SAT"
+                description="For undergraduate university admission, scholarships, and academic opportunities."
+                href="/register"
+                color="primary"
+              />
+
+              <RegisterCard
+                title="CELPIP"
+                description="For Canadian immigration, citizenship, and approved pathways where CELPIP is accepted."
+                href="/register"
                 color="accent"
               />
             </div>

@@ -117,6 +117,48 @@ export default function HomePage() {
               href="/mock-tests"
               color="from-emerald-500 to-blue-500"
             />
+            <ServiceCard
+              icon={BookOpen}
+              title="IELTS"
+              description="Professional registration support for study, migration, and international opportunities."
+              href="/register"
+              color="from-violet-500 to-purple-500"
+            />
+            <ServiceCard
+              icon={Zap}
+              title="TOEFL"
+              description="Registration support for university admission and international education."
+              href="/register"
+              color="from-purple-500 to-fuchsia-500"
+            />
+            <ServiceCard
+              icon={Award}
+              title="GRE"
+              description="Registration guidance for Master's, PhD, MBA, and graduate programmes."
+              href="/register"
+              color="from-fuchsia-500 to-pink-500"
+            />
+            <ServiceCard
+              icon={Target}
+              title="GMAT"
+              description="Professional support for MBA and graduate management applications."
+              href="/register"
+              color="from-pink-500 to-rose-500"
+            />
+            <ServiceCard
+              icon={Users}
+              title="SAT"
+              description="Registration support for undergraduate admission and scholarships."
+              href="/register"
+              color="from-orange-500 to-amber-500"
+            />
+            <ServiceCard
+              icon={Shield}
+              title="CELPIP"
+              description="Canadian immigration, citizenship, and approved pathway registration support."
+              href="/register"
+              color="from-amber-500 to-yellow-500"
+            />
           </div>
         </div>
       </section>
