@@ -14,11 +14,15 @@ export default function ContactPage() {
       <section className="py-16 md:py-24 bg-card border-b border-border">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            We&apos;re Here to Help
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Whether you have questions about PTE registration, preparation classes, mock tests, or any of our services, our dedicated team is ready to assist you.
-          </p>
+              HERE TO SUPPORT YOUR JOURNEY
+            </h1>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Have questions about international examination registration or need assistance choosing the right examination? Our dedicated team is here to provide clear guidance, reliable registration support, and professional assistance from start to finish.
+              <br />
+              IELTS • PTE • TOEFL • GRE • GMAT • CELPIP &amp; MORE
+              <br />
+              Your Gateway to Global Success.
+            </p>
         </div>
       </section>
 
