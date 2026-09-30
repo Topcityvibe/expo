@@ -61,16 +61,16 @@ export function Footer() {
               <li className="flex gap-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-muted-foreground">
-                  Vertex Testing Services Limited, Proxy Building, Prince Dele Alao Close, Olokuta Junction Idi-aba, Abeokuta, 111101, Ogun State
+                  Address - Vertex Building, Liberty Estate Laderin Abeokuta Ogun State
                 </span>
               </li>
               <li className="flex gap-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <a
-                  href="tel:07026738900"
+                  href="tel:08147138191"
                   className="text-sm text-muted-foreground hover:text-primary transition"
                 >
-                  07026738900
+                  08147138191
                 </a>
               </li>
               <li className="flex gap-3">

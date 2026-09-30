@@ -36,19 +36,22 @@ export default function AboutPage() {
               <div>
                 <h2 className="text-3xl font-bold text-foreground mb-6">WHO WE ARE</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  Vertex Testing Services Limited, a subsidiary of Proxy Coding School, is a professional examination registration organization dedicated to connecting candidates with global educational, professional, and immigration opportunities.
+                  Vertex Testing Services Limited is a professional examination services company committed to connecting candidates with global educational, professional, immigration, and career opportunities through reliable international examination registration services.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  We provide registration support for a wide range of internationally recognized examinations, including: PTE • IELTS • TOEFL • GRE • GMAT • CELPIP • SAT • OET and other international examinations.
+                  We provide professional registration support for a wide range of internationally recognized examinations, including PTE Academic, PTE Core, IELTS, TOEFL, GRE, GMAT, CELPIP, SAT, OET, and other global examinations.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  Our goal is to make examination registration simple, reliable, transparent, and accessible, while providing candidates with professional guidance throughout their examination journey.
+                  Our goal is to make international examination registration simple, accurate, reliable, transparent, and accessible. We understand that every examination represents an important step in a candidate&apos;s academic, professional, or immigration journey, and we are committed to providing dependable support throughout the registration process.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  Through our integration with Proxy Coding School, we are expanding beyond examinations into technology, digital skills, and career development, creating a broader platform that brings together assessment, education, technology, and global opportunities.
+                  At Vertex Testing Services Limited, we place candidates at the centre of everything we do. Our team is committed to delivering professional customer service, accurate registration assistance, timely communication, and a seamless experience from initial enquiry through successful examination booking.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                  As we continue to grow, our vision is to establish Vertex Testing Services Limited as one of Nigeria&apos;s most trusted international examination service brands, recognized for professionalism, reliability, integrity, and exceptional customer experience.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  At Vertex, we are guided by: Integrity • Professionalism • Accuracy • Innovation • Excellence
+                  At Vertex, we are guided by: Integrity • Professionalism • Accuracy • Reliability • Excellence
                 </p>
               </div>
 
@@ -67,7 +70,7 @@ export default function AboutPage() {
                 <ValueCard
                   icon={Users}
                   title="OUR FOCUS"
-                  description="We focus on making international examination registration simple, reliable, accessible, and professional. From PTE, IELTS, TOEFL, GRE, GMAT and CELPIP to other globally recognized examinations, we are committed to providing candidates with accurate registration support, exceptional customer service, and a seamless experience. Through our connection with Proxy Coding School, we also embrace technology and innovation as essential tools for creating better opportunities for individuals across Africa and beyond. Integrity • Excellence • Innovation • Global Access."
+                  description="Our focus is to make international examination registration simple, accurate, reliable, accessible, and professional. We provide registration support for PTE Academic, PTE Core, IELTS, TOEFL, GRE, GMAT, CELPIP, SAT, OET, and other internationally recognized examinations. We are committed to providing every candidate with accurate registration assistance, timely communication, transparent service, and exceptional customer support from initial enquiry through successful examination booking. At Vertex Testing Services Limited, we believe that every examination can represent a gateway to education, immigration, professional advancement, and global opportunities. Our responsibility is to make that important first step as seamless and dependable as possible. Integrity • Professionalism • Accuracy • Reliability • Excellence"
                 />
               </div>
 
@@ -137,13 +140,16 @@ export default function AboutPage() {
               <div className="bg-card border border-border rounded-xl p-8 md:p-12">
                 <h2 className="text-3xl font-bold text-foreground mb-6">OUR COMMITMENT</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  At Vertex Testing Services Limited, we are committed to providing candidates with reliable, professional, and seamless access to leading international examinations and assessment services.
+                  At Vertex Testing Services Limited, we are committed to making international examination registration simple, accurate, reliable, and accessible for every candidate we serve.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  We continuously strive to uphold the highest standards of integrity, accuracy, professionalism, technology, and customer service, ensuring that every candidate receives the support and experience they deserve.
+                  We maintain high standards of integrity, professionalism, transparency, confidentiality, and customer service while providing dependable registration support for PTE, IELTS, CELPIP, TOEFL, GRE, GMAT, SAT, OET, and other internationally recognized examinations.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                  We understand that every examination registration represents an important step toward a candidate&apos;s academic, professional, immigration, or career goals. That is why our team is dedicated to providing accurate information, timely assistance, and a seamless registration experience from initial enquiry to successful booking.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  As part of the Proxy Coding School Group, we remain committed to building a trusted assessment and examination network that connects candidates to global opportunities through world-class testing services.
+                  Our commitment is simple: exceptional service, dependable support, and a registration experience every candidate can trust.
                 </p>
               </div>
 

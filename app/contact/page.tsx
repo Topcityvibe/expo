@@ -43,9 +43,8 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-1">Visit Our Centre</h3>
                   <p className="text-muted-foreground">
-                    Proxy Building<br />
-                    Prince Dele Alao Close, Olokuta Junction Idi-aba<br />
-                    Abeokuta, 111101, Ogun State
+                    Address - Vertex Building, Liberty Estate Laderin<br />
+                    Abeokuta, Ogun State
                   </p>
                 </div>
               </div>
@@ -57,10 +56,10 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-1">Phone</h3>
                   <a
-                    href="tel:07026738900"
+                    href="tel:08147138191"
                     className="text-muted-foreground hover:text-primary transition"
                   >
-                    07026738900
+                    08147138191
                   </a>
                 </div>
               </div>
