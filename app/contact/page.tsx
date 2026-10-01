@@ -121,7 +121,7 @@ export default function ContactPage() {
             <div className="text-center">
               <MapPin className="w-16 h-16 text-primary/30 mx-auto mb-4" />
               <p className="text-muted-foreground">
-                Vertex Testing Services Limited, Proxy Building, Prince Dele Alao Close, Olokuta Junction Idi-aba, Abeokuta, 111101, Ogun State
+                Vertex Building, Liberty Estate Laderin Abeokuta Ogun State
               </p>
             </div>
           </div>

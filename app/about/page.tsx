@@ -20,9 +20,11 @@ export default function AboutPage() {
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               VERTEX TESTING SERVICES LIMITED
             </h1>
-            <p className="text-xl text-muted-foreground">
-              A subsidiary of Proxy Cooding School.
-            </p>
+          <p className="text-xl text-muted-foreground">
+            Your Gateway to Global Examination Opportunities
+            <br />
+            Professional • Reliable • Accurate • Trusted
+          </p>
           </div>
         </div>
       </section>
